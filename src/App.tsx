@@ -1,5 +1,6 @@
 import React from 'react';
 import Greating from './Greating';
+import DataFetch from './DataFetch';
 
 
 const users=[
@@ -27,7 +28,9 @@ function App(){
  
   return (
     <div className='App' >
+      <DataFetch status='loading'   ></DataFetch>
       <Greating  users={users}></Greating>
+      
     </div>
   );
 };
